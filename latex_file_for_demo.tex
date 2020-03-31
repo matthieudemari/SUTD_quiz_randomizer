@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%% HEADER: START %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, 11pt, addpoints, noanswers]{exam}
+
+%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+\usepackage{amsmath,amssymb}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{framed}
+\usepackage{transparent}
+\usepackage{tikz}
+\usepackage{bm}
+\usepackage{color}	
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+\usepackage{booktabs}
+\usepackage{units}
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+\usepackage{multicol}
+\usepackage{lipsum}
+
+%%%%%%%%%%%%%% ADDITIONAL COMMANDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+\newcommand{\eqn}[1]{\begin{align*}#1\end{align*}}% document class option name
+\newcommand{\ben}[1]{\begin{enumerate}#1\end{enumerate}}
+\newcommand{\bi}[1]{\begin{itemize}#1\end{itemize}}
+\newcommand{\eps}{\epsilon}
+\newcommand{\mc}[1]{\mathcal{#1}}
+
+\newcommand{\drf}[2]{ \frac{\partial #1}{\partial #2} }
+\newcommand{\s}{ \\\vspace{3mm} }
+\newcommand{\tb}[1]{\textbf{#1}}
+\newcommand{\RR}{\mathbb{R}}
+
+\newtoggle{lecture}
+\toggletrue{lecture}
+
+%%%%%%%%%%%%%% TITLE HEADER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{50.039 -- Theory and Practice of Deep learning }
+
+\author{Alexander, Matthieu}
+\date{Quiz 02 - Demo version}
+
+%%%%%%%%%%%%%% HEADER: END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle % this prints the handout title, author, and date
+\vspace{0.5cm}
+
+%%%%%%%%%%%%%% GENERAL DISCLAIMER: START %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent {\small [The following notes are compiled from various sources such as textbooks, lecture materials, Web resources and are shared for academic purposes only, intended for use by students registered for a specific course. In the interest of brevity, every source is not cited. The compiler of these notes gratefully acknowledges all such sources. ] \\
+
+%%%%%%%%%%%%%% GENERAL DISCLAIMER: END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%  DISCLAIMER RE OUTLINE: START %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Comment the lines below to suppress verbiage on first page and footer about pre-lecture tentative outline.
+
+%\vspace{0.5cm}
+%\textcolor{blue}{\textit{Given below is a tentative outline of topics planned for this week. Actual coverage in class may be more or less, depending on students' progress. Please refer to the lecture summaries posted after each class meeting for more complete information.}} \rfoot{\textcolor{blue}{Weekly outline}} 
+%\vspace{0.5cm}
+
+%%%%%%%%%%%%%%  DISCLAIMER RE OUTLINE: END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+}
+
+%%%%%%%%%%%%%%  BODY: START %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% For demonstration purposes, we will only provide one task of the Deep Learning Quiz 2 exam.
+
+\setlength\parindent{0pt}
+
+This quiz has seven (1) task. Write your name on the sheet.\s
+
+\textcolor{red}{You are not allowed to share the contents of this examination with others. You are not allowed to share your password for this examination document with others. Doing so results in being treated as an academic dishonesty case with review by the relevant SUTD authorities.}
+
+\section*{Task 1:}
+
+\bi{
+
+%%%%%%%%%%%%%%  THIS IS WHERE THE RANDOMIZER MAGIC HAPPENS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The #raXX are keys which will later be replaced by the Python code with randomized values.
+% Warning: in its current form, the latex file does not compile, because of the # keys in math mode!
+
+\item Let us consider 2-dimensional convolution with spatial size $ (#ra01 \times #ra02) $. We are using a kernel with size $ (#ra03 \times #ra04) $, a stride $ #ra05 $ and a zero-padding of size $ #ra06 $.
+
+\smallskip
+What will be the spatial size of the feature map, which is the output of the convolution?
+
+\smallskip
+Note that spatial size does not depend on the number of input or output channels. \textbf{Show your calculation.}
+
+\smallskip
+\begin{solution}
+Solution: Output size will be $ (#ra07, #ra08) $.
+\end{solution}
+
+}
+
+%%%%%%%%%%%%%%  BODY: END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
